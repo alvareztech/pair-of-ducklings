@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+{{#has tag="#es"}}
+<html lang="es">
+{{else}}
 <html lang="{{@site.locale}}">
+{{/has}}
+{{!-- <html lang="{{@site.locale}}"> --}}
 <head>
 
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
