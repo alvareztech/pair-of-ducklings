@@ -1,12 +1,12 @@
 {{#has tag="#es"}}
-    <p>ESS</p>
+    {{!< default-es}}
 {{else}}
-    <p>ENN</p>
+    {{!< default}}
 {{/has}}
 
 {{!-- The tag above means: insert everything in this file
 into the {body} tag of the default.hbs template --}}
-{{!< default}}
+
 
 {{#post}}
 {{!-- Everything inside the #post block pulls data from the post --}}
