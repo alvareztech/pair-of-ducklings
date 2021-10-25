@@ -9,7 +9,11 @@ into the {body} tag of the default.hbs template --}}
 
 <main id="site-main" class="site-main">
     <article class="article {{post_class}}">
-
+{{#has tag="#es"}}
+    <p>ESS</p>
+{{else}}
+    <p>ENN</p>
+{{/has}}
         <header class="article-header gh-canvas">
 
             {{#if primary_tag}}
